@@ -3,7 +3,7 @@
 # Import custom corpus
 
 # Set the path to the corpus
-CORPUS_PATH=./CVE_PoC
+CORPUS_PATH=./gpt_no_console
 
 for file in $CORPUS_PATH/*; do
     swift run FuzzILTool --compile $file 
