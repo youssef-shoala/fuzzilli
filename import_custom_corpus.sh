@@ -8,3 +8,5 @@ CORPUS_PATH=./gpt_cve
 for file in $CORPUS_PATH/*; do
     swift run FuzzILTool --compile $file 
 done
+
+cp $CORPUS_PATH ~/fuzzilli/Cloud/Docker/Corpus
